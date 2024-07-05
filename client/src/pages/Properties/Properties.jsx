@@ -5,6 +5,7 @@ import useProperties from "../../hooks/useProperties";
 import "./Properties.css";
 const Properties = () => {
   const { data, isError, isLoading } = useProperties();
+  console.log(data);
 
   return (
     <div className="wrapper">
