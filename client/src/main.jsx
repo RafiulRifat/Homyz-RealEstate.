@@ -1,8 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { Auth0Provider } from "@auth0/auth0-react";
+import { MantineProvider } from "@mantine/core"; // Import MantineProvider
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -15,7 +16,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       audience="http://localhost:8000"
       scope="openid profile email"
     >
-      <App />
+      <MantineProvider>
+        {" "}
+        {/* Wrap MantineProvider around Auth0Provider */}
+        <App />
+      </MantineProvider>
     </Auth0Provider>
   </React.StrictMode>
 );
