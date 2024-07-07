@@ -19,4 +19,4 @@ export const getAllProperties = async () => {
       toast.error("Something went wrong");
       throw error;
     }
-  };
+  }; 
