@@ -2,7 +2,7 @@ import React from "react";
 import "./PropertyCard.css";
 import { AiFillHeart } from "react-icons/ai";
 
-const PropertyCard = ({ card }) => {
+export const PropertyCard = ({ card }) => {
   return (
     <div className="flexColStart r-card">
       <AiFillHeart size={24} color="white" />
@@ -17,5 +17,3 @@ const PropertyCard = ({ card }) => {
     </div>
   );
 };
-
-export default PropertyCard;

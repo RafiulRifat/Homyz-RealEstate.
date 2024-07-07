@@ -2,8 +2,8 @@ import React from "react";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import useProperties from "../../hooks/useProperties";
 import { PuffLoader } from "react-spinners";
-
 import "./Properties.css";
+import { PropertyCard } from "../../components/PropertyCard/PropertyCard";
 const Properties = () => {
   const { data, isError, isLoading } = useProperties();
 

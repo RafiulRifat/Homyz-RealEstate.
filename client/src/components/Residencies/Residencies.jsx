@@ -1,7 +1,7 @@
 import React from "react";
 import data from "../../utils/slider.json";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import PropertyCard from "../PropertyCard/PropertyCard";
+import { PropertyCard } from "../PropertyCard/PropertyCard";
 // Import Swiper styles
 import "swiper/css";
 import "./Residencies.css";

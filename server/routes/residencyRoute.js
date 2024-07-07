@@ -3,7 +3,7 @@ import { createResidency, getAllResidencies, getResidency } from '../controllers
 
 const router = express.Router();
 router.post("/create", createResidency)
-router.post("/allresd", getAllResidencies)
+router.get("/allresd", getAllResidencies)
 router.get("/:id", getResidency)
 
 

@@ -52,9 +52,9 @@ export const getResidency = asyncHandler(async (req, res) => {
     const { id } = req.params;
 
     // Validate and convert id to ObjectId
-    if (!ObjectId.isValid(id)) {
-        return res.status(400).send({ message: "Invalid residency ID" });
-    }
+    // if (!ObjectId.isValid(id)) {
+    //     return res.status(400).send({ message: "Invalid residency ID" });
+    // }
 
     try {
         const residency = await prisma.residency.findUnique({
