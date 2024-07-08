@@ -1,4 +1,5 @@
 import React from "react";
+import { Menu, Avatar } from "@mantine/core"; // Adjust this import according to the library you are using
 
 const ProfileMenu = ({ user, logout }) => {
   return (
@@ -8,7 +9,6 @@ const ProfileMenu = ({ user, logout }) => {
       </Menu.Target>
       <Menu.Dropdown>
         <Menu.Item>Favourites</Menu.Item>
-
         <Menu.Item>Bookings</Menu.Item>
         <Menu.Item
           onClick={() => {
